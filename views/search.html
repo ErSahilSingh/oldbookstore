@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title>OldBook-Store</title> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="search.css">
+        <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <nav class="nav-list">
+                <div class="logo">
+                    <h2>OldBook-Store</h2>
+                    </div>
+                    <ul class="headnam">
+                        <li><a href="oldBook.html" class="link-b">back</a></li>
+                    </ul>
+                </nav>
+        </header><br><br><br>
+        <!------------------buy form-------------------------------->
+              
+                <section class="backC" id="listB">
+                    <div class="container-fluid" id="headaboutsell">
+                      <h1 class="text-center pt-3">Buy books</h1>
+                      <hr class="w-25 mx-auto pt-3" id="hrC">
+                    </div>
+                    <div class="w-50 mx-auto">
+                        <form >
+                          <div class="form-group">
+                            <label for="name">Book Name:</label>
+                            <input type="text" class="form-control" id="boname">
+                          </div>
+                          <div class="form-group">
+                            <label for="name">Author Name:</label>
+                            <input type="text" class="form-control" id="auname">
+                          </div>
+                          <button type="button" class="btn btn-primary"  onclick="buy()">Search</button>
+                        </form>
+                        <hr class=" w-25 mx-auto pt-5" id="hrC">
+                    </div>
+                    </section>
+                    <br><br>
+                   <br><br><br> <section class="tables">
+                    <div class="container">           
+                        <table class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th>Fullname</th>
+                              <th>Phone no.</th>
+                              <th>Bookname</th>
+                              <th>Authorname</th>
+                              <th>Price</th>
+                              </tr>
+                          </thead>
+                          <tbody id ="search">
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                        
+
+
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="search.js"></script>
+    </body>
+    </html>

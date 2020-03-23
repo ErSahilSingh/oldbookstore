@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------nav------- */
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgba(50, 59, 136, 0.953);
+}
+.logo{
+  color: bisque;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-family: 'Saira Stencil One', cursive;
+}
+.headnam{
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  list-style: none;
+  font-size: 15px;
+}
+.headnam a{
+  color: bisque;
+  text-decoration: none;
+  letter-spacing: 3px;
+    padding-left: 600%;
+  font-weight: bold;
+
+}
+.headnam a:hover{
+  color: rgb(194, 141, 98);
+  text-decoration-line: none;
+}
+.backC{
+    background-color: rgb(228, 228, 228);
+  }
+  .tables{
+    background-color: rgb(228, 228, 228);
+  }

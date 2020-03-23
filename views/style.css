@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(rgba(0, 5, 6, 0.616),rgba(5, 0, 5, 0.616)),url(outnet/allbooks.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.login-page{
+    width: 335px;
+    padding: 5% 0 0;
+    margin: auto;
+}
+
+.form{
+    position: relative;
+    z-index: 1;
+    background-color: rgba(211, 209, 206, 0.65);
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    
+}
+
+.form input{
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    padding: 15px;
+    border-radius: 3%;
+    margin: 0 0 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.forgetp{
+    padding: 5px 15px 5px;
+
+}
+.form .message{
+    margin: 10px 0 0;
+    font-size: 14px;
+}
+
+.form .login-form{
+    display: none;
+}
+
+
+

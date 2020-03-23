@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <link rel="stylesheet" type="text/css" href="style.css">  
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+            <title>Log in </title>
+    </head>
+    <body>
+            <div class="login-page">
+                <div class="form">
+                    <img src="outnet/id.png" class="rounded-circle" alt="login id" width="100" height="100"><br>
+                    <form class="register-form">
+
+                        <input type="text" placeholder="E-mail" id="emaillog"><br>
+                        <input type="password" placeholder="Password" id="passlog">
+                        <div class="forgetp">
+                            <a href="#" data-toggle="modal" data-target="#myModal">Forget password</a>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-block" onclick="login()">Login</button>
+                        <p class="message">Account?<a href="#">Sign up</a></p>
+                    </form>
+                    <form class="login-form">
+                        <input type="text" placeholder="Full Name" id="fname"><br>
+                        <input type="text" placeholder="E-mail" id="emailsign">
+                        <input type="password" placeholder="Password" id="passsign">
+                        <button type="button" class="btn btn-primary btn-block" onclick="signup()">Create</button>
+                        <p class="message">Already Registered?<a href="#">Log in</a></p>
+                    </form>
+
+                </div> 
+                <div class="container">
+                  
+                  <!-- The Modal -->
+                  <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                      
+                        <!-- Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Recover password</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        
+                        <!-- body -->
+                        <div class="modal-body">
+                          <input class="form-control" type="email" placeholder="E-mail" id="emailforget">
+                        </div>
+                        
+                        <!---footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mModal" onclick="forgetpass()">
+                            Submit
+                          </button>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                  <!--------------------------------------------->
+                  <div class="container">
+                    
+                  
+                    <!--  Modal -->
+                    <div class="modal fade" id="mModal">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                        
+                          <!--Header -->
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          
+                          <!-- body -->
+                          <div class="modal-body">
+                           <input class="form-control" placeholder="Otp" id="otp">
+                           <input class="form-control" type="text" placeholder="New password" id="noPass">
+                          </div>
+                          
+                          <!--foot-->
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" onclick="updatepass()">Save</button>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                </div>
+        
+
+
+        <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+        
+        <script src="login.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    </body>
+</html>
